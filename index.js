@@ -1,3 +1,4 @@
 var age = 30;
-
-console.log(age);
+var FirstName = 'Montfort';
+var isFictional = true;
+console.log(age, FirstName, isFictional);
