@@ -5,6 +5,5 @@ let number: null
 let ageing: undefined
 
 number = null
-ageing = undefined
 
-console.log(age, FirstName, isFictional)
+console.log(age, FirstName)

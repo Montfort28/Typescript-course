@@ -6,6 +6,5 @@ let isFictional = true;
 let number;
 let ageing;
 number = null;
-ageing = undefined;
-console.log(age, FirstName, isFictional);
+console.log(age, FirstName);
 //# sourceMappingURL=index.js.map
