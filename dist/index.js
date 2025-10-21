@@ -1,8 +1,16 @@
 "use strict";
+// let age: number = 30
+// let FirstName: string = 'Montfort'
+// let isFictional: boolean = true
 Object.defineProperty(exports, "__esModule", { value: true });
-let age = 30;
-let FirstName = 'Montfort';
-let isFictional = true;
+// console.log(age, FirstName)
+//arrays
 let names;
-console.log(age, FirstName);
+//type infering
+let ages = [12, 15, 18];
+const age = ages[2];
+console.log(age);
+let types = [35, true, 'hello'];
+const T = types[1];
+console.log(T);
 //# sourceMappingURL=index.js.map
