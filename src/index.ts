@@ -30,3 +30,12 @@ let user: {firstName: string, age: number, id: number} = {
 user.firstName = 'mont'
 user.age = 27
 user.id = 2
+
+//type inference with object literals
+
+let person = {
+    name: 'mugisha',
+    score: 35
+}
+
+const P = person.name
