@@ -13,4 +13,13 @@ console.log(age);
 let types = [35, true, 'hello'];
 const T = types[1];
 console.log(T);
+//object literals
+let user = {
+    firstName: 'luigi',
+    age: 23,
+    id: 1
+};
+user.firstName = 'mont';
+user.age = 27;
+user.id = 2;
 //# sourceMappingURL=index.js.map
