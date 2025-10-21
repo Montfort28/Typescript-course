@@ -1,31 +1,17 @@
 "use strict";
-// let age: number = 30
-// let FirstName: string = 'Montfort'
-// let isFictional: boolean = true
+//normal functions
 Object.defineProperty(exports, "__esModule", { value: true });
-// console.log(age, FirstName)
-//arrays
-let names;
-//type infering
-let ages = [12, 15, 18];
-const age = ages[2];
-console.log(age);
-let types = [35, true, 'hello'];
-const T = types[1];
-console.log(T);
-//object literals
-let user = {
-    firstName: 'luigi',
-    age: 23,
-    id: 1
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+addTwoNumbers(3, 9);
+//arrow functions
+const subtractTwoNumbers = (a, b) => {
+    return a - b;
 };
-user.firstName = 'mont';
-user.age = 27;
-user.id = 2;
-//type inference with object literals
-let person = {
-    name: 'mugisha',
-    score: 35
-};
-const P = person.name;
+function addAllNumbers(items) {
+    const total = items.reduce((a, c) => a + c, 0);
+    console.log(total);
+}
+addAllNumbers([5, 7, 9, 2, 0, 67]);
 //# sourceMappingURL=index.js.map
