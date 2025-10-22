@@ -21,14 +21,14 @@ age = 'name';
 //any type in arrays
 let items = ['hello', 30, true, null];
 items.push({ id: 123 });
-console.log(items);
+//console.log(items)
 //functions & any types
 function addTogether(value) {
     return value + value;
 }
 const resultOne = addTogether('hello');
 const resultTwo = addTogether(30);
-console.log(resultOne, resultTwo);
+//console.log(resultOne, resultTwo)
 //tuples: theyre like arrays but where arrays have values with same data types tuples have different types in a certain order tho
 let person = [1, 'Mont', true];
 //more examples
@@ -38,4 +38,8 @@ function useCoords() {
     return [lat, long];
 }
 const [lat, long] = useCoords();
+//naming tuples
+let user;
+user = ['Mont', 20];
+console.log(user[1]);
 //# sourceMappingURL=index.js.map

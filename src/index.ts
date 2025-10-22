@@ -32,7 +32,7 @@ let items: any[] = ['hello', 30, true, null]
 
 items.push({id: 123})
 
-console.log(items)
+//console.log(items)
 
 //functions & any types
 
@@ -42,7 +42,7 @@ function addTogether(value: any): any{
 
 const resultOne = addTogether('hello') 
 const resultTwo = addTogether(30) 
-console.log(resultOne, resultTwo)
+//console.log(resultOne, resultTwo)
 
 //tuples: theyre like arrays but where arrays have values with same data types tuples have different types in a certain order tho
 
@@ -58,3 +58,10 @@ function useCoords(): [number, number]{
 }
 
 const [lat, long] = useCoords()
+
+//naming tuples
+
+let user: [name: string, age: number]
+
+user = ['Mont', 20]
+console.log(user[1])
