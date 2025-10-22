@@ -29,4 +29,7 @@ function addTogether(value) {
 const resultOne = addTogether('hello');
 const resultTwo = addTogether(30);
 console.log(resultOne, resultTwo);
+//tuples: theyre like arrays but where arrays have values with same data types tuples have different types in a certain order tho
+let person = [1, 'Mont', true];
+//more examples
 //# sourceMappingURL=index.js.map
