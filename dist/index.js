@@ -22,4 +22,11 @@ age = 'name';
 let items = ['hello', 30, true, null];
 items.push({ id: 123 });
 console.log(items);
+//functions & any types
+function addTogether(value) {
+    return value + value;
+}
+const resultOne = addTogether('hello');
+const resultTwo = addTogether(30);
+console.log(resultOne, resultTwo);
 //# sourceMappingURL=index.js.map

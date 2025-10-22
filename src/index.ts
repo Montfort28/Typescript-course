@@ -33,3 +33,13 @@ let items: any[] = ['hello', 30, true, null]
 items.push({id: 123})
 
 console.log(items)
+
+//functions & any types
+
+function addTogether(value: any): any{
+    return value + value
+} 
+
+const resultOne = addTogether('hello') 
+const resultTwo = addTogether(30) 
+console.log(resultOne, resultTwo)
