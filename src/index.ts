@@ -25,3 +25,11 @@ let age: any
 
 age = 30
 age = 'name'
+
+//any type in arrays
+
+let items: any[] = ['hello', 30, true, null]
+
+items.push({id: 123})
+
+console.log(items)

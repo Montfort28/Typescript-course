@@ -18,4 +18,8 @@ addAllNumbers([5, 7, 9, 2, 0, 67]);
 let age;
 age = 30;
 age = 'name';
+//any type in arrays
+let items = ['hello', 30, true, null];
+items.push({ id: 123 });
+console.log(items);
 //# sourceMappingURL=index.js.map
