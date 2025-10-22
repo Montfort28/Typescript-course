@@ -49,3 +49,12 @@ console.log(resultOne, resultTwo)
 let person: [number, string, boolean] = [1, 'Mont', true]
 
 //more examples
+
+function useCoords(): [number, number]{
+
+    const lat = 30
+    const long = 40
+    return [lat, long]
+}
+
+const [lat, long] = useCoords()
