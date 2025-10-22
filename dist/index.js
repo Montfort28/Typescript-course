@@ -14,4 +14,8 @@ function addAllNumbers(items) {
     console.log(total);
 }
 addAllNumbers([5, 7, 9, 2, 0, 67]);
+//any type
+let age;
+age = 30;
+age = 'name';
 //# sourceMappingURL=index.js.map

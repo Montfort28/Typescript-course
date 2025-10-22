@@ -18,3 +18,10 @@ function addAllNumbers( items: number[]){
 }
 
 addAllNumbers([5,7,9,2,0,67])
+
+//any type
+
+let age: any
+
+age = 30
+age = 'name'
