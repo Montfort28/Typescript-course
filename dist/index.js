@@ -42,5 +42,12 @@ const [lat, long] = useCoords();
 let user;
 user = ['Mont', 20];
 console.log(user[1]);
-//interfaces
+const firstAuthor = { name: 'mario', id: 1 };
+const newPost = {
+    title: 'my first post',
+    body: 'something interesting',
+    tags: ['gaming', 'tech'],
+    createdAt: new Date,
+    author: firstAuthor
+};
 //# sourceMappingURL=index.js.map
