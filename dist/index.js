@@ -56,4 +56,7 @@ function createPost(post) {
     console.log(`created post ${post.title} by ${post.author.name}`);
 }
 createPost(newPost);
+//arrays
+let posts = [];
+posts.push(newPost);
 //# sourceMappingURL=index.js.map

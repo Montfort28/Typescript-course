@@ -100,3 +100,9 @@ function createPost(post: Post): void{
 }
 
 createPost(newPost)
+
+//arrays
+
+let posts: Post[] = []
+
+posts.push(newPost)
