@@ -50,4 +50,5 @@ const newPost = {
     createdAt: new Date,
     author: firstAuthor
 };
+console.log(newPost);
 //# sourceMappingURL=index.js.map

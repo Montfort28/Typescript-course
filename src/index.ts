@@ -90,3 +90,5 @@ const newPost: Post = {
     createdAt: new Date,
     author: firstAuthor
 }
+
+console.log(newPost)
