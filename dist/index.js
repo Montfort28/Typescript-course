@@ -42,4 +42,5 @@ const [lat, long] = useCoords();
 let user;
 user = ['Mont', 20];
 console.log(user[1]);
+//interfaces
 //# sourceMappingURL=index.js.map

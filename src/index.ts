@@ -65,3 +65,6 @@ let user: [name: string, age: number]
 
 user = ['Mont', 20]
 console.log(user[1])
+
+//interfaces
+
