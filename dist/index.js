@@ -42,4 +42,21 @@ const [lat, long] = useCoords();
 let user;
 user = ['Mont', 20];
 console.log(user[1]);
+const firstAuthor = { name: 'mario', id: 1 };
+const newPost = {
+    title: 'my first post',
+    body: 'something interesting',
+    tags: ['gaming', 'tech'],
+    createdAt: new Date,
+    author: firstAuthor
+};
+console.log(newPost);
+//as function argument types
+function createPost(post) {
+    console.log(`created post ${post.title} by ${post.author.name}`);
+}
+createPost(newPost);
+//arrays
+let posts = [];
+posts.push(newPost);
 //# sourceMappingURL=index.js.map

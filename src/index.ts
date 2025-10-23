@@ -65,3 +65,44 @@ let user: [name: string, age: number]
 
 user = ['Mont', 20]
 console.log(user[1])
+
+//interfaces
+
+interface Author {
+    name: string,
+    id: number
+}
+
+const firstAuthor: Author = {name: 'mario', id: 1}
+
+interface Post {
+    title: string,
+    body: string,
+    tags: string[],
+    createdAt: Date,
+    author: Author
+}
+
+const newPost: Post = {
+    title: 'my first post',
+    body: 'something interesting',
+    tags: ['gaming', 'tech'],
+    createdAt: new Date,
+    author: firstAuthor
+}
+
+console.log(newPost)
+
+//as function argument types
+
+function createPost(post: Post): void{
+   console.log(`created post ${post.title} by ${post.author.name}`)
+}
+
+createPost(newPost)
+
+//arrays
+
+let posts: Post[] = []
+
+posts.push(newPost)
