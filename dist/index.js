@@ -51,4 +51,9 @@ const newPost = {
     author: firstAuthor
 };
 console.log(newPost);
+//as function argument types
+function createPost(post) {
+    console.log(`created post ${post.title} by ${post.author.name}`);
+}
+createPost(newPost);
 //# sourceMappingURL=index.js.map

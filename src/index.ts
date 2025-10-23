@@ -92,3 +92,11 @@ const newPost: Post = {
 }
 
 console.log(newPost)
+
+//as function argument types
+
+function createPost(post: Post): void{
+   console.log(`created post ${post.title} by ${post.author.name}`)
+}
+
+createPost(newPost)
