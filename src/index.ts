@@ -163,3 +163,6 @@ const firstId = swapIdTypes(1)
 const secondId = swapIdTypes('3')
 
 console.log(firstId, secondId)
+
+//tagged interfaces
+
