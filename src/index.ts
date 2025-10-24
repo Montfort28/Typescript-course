@@ -142,3 +142,7 @@ formatUser({name: 'mont', score: 80})
 
 //union types
 
+let someId: number | string
+
+someId = 1
+someId = '2'

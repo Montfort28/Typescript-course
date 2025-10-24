@@ -75,4 +75,7 @@ function formatUser(user) {
 formatUser(userOne);
 formatUser({ name: 'mont', score: 80 });
 //union types
+let someId;
+someId = 1;
+someId = '2';
 //# sourceMappingURL=index.js.map
