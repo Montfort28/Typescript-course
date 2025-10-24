@@ -166,3 +166,24 @@ console.log(firstId, secondId)
 
 //tagged interfaces
 
+interface users{
+    type: 'users'
+    name: string
+    id: number
+    email: string
+}
+
+interface person{
+    type: 'person'
+    firstname: string
+    age: number
+    id: number
+}
+
+function logDetails(value: users | person): void{
+    if(value.type === 'users'){
+        console.log(value.id, value.name, value.email)
+    }else if (value.type === 'person'){
+        console.log(value.id, value.firstname, value.age)
+    }
+}

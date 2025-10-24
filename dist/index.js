@@ -89,5 +89,12 @@ function swapIdTypes(id) {
 const firstId = swapIdTypes(1);
 const secondId = swapIdTypes('3');
 console.log(firstId, secondId);
-//tagged interfaces
+function logDetails(value) {
+    if (value.type === 'users') {
+        console.log(value.id, value.name, value.email);
+    }
+    else if (value.type === 'person') {
+        console.log(value.id, value.firstname, value.age);
+    }
+}
 //# sourceMappingURL=index.js.map
