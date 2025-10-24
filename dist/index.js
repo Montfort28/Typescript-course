@@ -68,7 +68,9 @@ function getRandomColor() {
 const colorOne = getRandomColor();
 const colorTwo = getRandomColor();
 console.log(colorOne, colorTwo);
+const userOne = { name: 'mario', score: 30 };
 function formatUser(user) {
     console.log(`${user.name} scored ${user.score} marks`);
 }
+formatUser(userOne);
 //# sourceMappingURL=index.js.map

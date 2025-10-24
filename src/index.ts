@@ -131,6 +131,10 @@ type user = {
     score: number
 }
 
+const userOne: user = {name: 'mario', score: 30}
+
 function formatUser(user: user){
     console.log(`${user.name} scored ${user.score} marks` )
 }
+
+formatUser(userOne)
