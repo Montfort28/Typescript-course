@@ -78,4 +78,12 @@ formatUser({ name: 'mont', score: 80 });
 let someId;
 someId = 1;
 someId = '2';
+function swapIdTypes(id) {
+    if (typeof id == 'string') {
+        //code using only string values
+    }
+    else {
+        //code now using number type values
+    }
+}
 //# sourceMappingURL=index.js.map

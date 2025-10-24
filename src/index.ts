@@ -146,3 +146,15 @@ let someId: number | string
 
 someId = 1
 someId = '2'
+
+//type guards
+
+type Id = number | string
+
+function swapIdTypes(id: Id){
+    if (typeof id == 'string'){
+        //code using only string values
+    }else{
+        //code now using number type values
+    }
+}
