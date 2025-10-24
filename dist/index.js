@@ -59,4 +59,5 @@ createPost(newPost);
 //arrays
 let posts = [];
 posts.push(newPost);
+//type eliases
 //# sourceMappingURL=index.js.map

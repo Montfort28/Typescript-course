@@ -106,3 +106,6 @@ createPost(newPost)
 let posts: Post[] = []
 
 posts.push(newPost)
+
+//type eliases
+
