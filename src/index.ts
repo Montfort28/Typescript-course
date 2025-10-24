@@ -106,3 +106,84 @@ createPost(newPost)
 let posts: Post[] = []
 
 posts.push(newPost)
+
+//type eliases
+
+type Rgb = [number, number, number]
+
+function getRandomColor(): Rgb{
+
+    const r = Math.floor(Math.random() *255)
+    const g = Math.floor(Math.random() *255)
+    const b = Math.floor(Math.random() *255)
+
+    return [r, g, b]
+}
+
+const colorOne = getRandomColor()
+const colorTwo = getRandomColor()
+console.log(colorOne, colorTwo)
+
+//example 2
+
+type user = {
+    name: string
+    score: number
+}
+
+const userOne: user = {name: 'mario', score: 30}
+
+function formatUser(user: user){
+    console.log(`${user.name} scored ${user.score} marks` )
+}
+
+formatUser(userOne)
+formatUser({name: 'mont', score: 80})
+
+//union types
+
+let someId: number | string
+
+someId = 1
+someId = '2'
+
+//type guards
+
+type Id = number | string
+
+function swapIdTypes(id: Id){
+    if (typeof id == 'string'){
+        return parseInt(id)
+    }else{
+        return id.toString()
+    }
+}
+
+const firstId = swapIdTypes(1)
+const secondId = swapIdTypes('3')
+
+console.log(firstId, secondId)
+
+//tagged interfaces
+
+interface users{
+    type: 'users'
+    name: string
+    id: number
+    email: string
+}
+
+interface person{
+    type: 'person'
+    firstname: string
+    age: number
+    id: number
+}
+
+function logDetails(value: users | person): void{
+    if(value.type === 'users'){
+        console.log(value.id, value.name, value.email)
+    }else if (value.type === 'person'){
+        console.log(value.id, value.firstname, value.age)
+    }
+}

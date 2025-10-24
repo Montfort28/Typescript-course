@@ -59,4 +59,42 @@ createPost(newPost);
 //arrays
 let posts = [];
 posts.push(newPost);
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return [r, g, b];
+}
+const colorOne = getRandomColor();
+const colorTwo = getRandomColor();
+console.log(colorOne, colorTwo);
+const userOne = { name: 'mario', score: 30 };
+function formatUser(user) {
+    console.log(`${user.name} scored ${user.score} marks`);
+}
+formatUser(userOne);
+formatUser({ name: 'mont', score: 80 });
+//union types
+let someId;
+someId = 1;
+someId = '2';
+function swapIdTypes(id) {
+    if (typeof id == 'string') {
+        return parseInt(id);
+    }
+    else {
+        return id.toString();
+    }
+}
+const firstId = swapIdTypes(1);
+const secondId = swapIdTypes('3');
+console.log(firstId, secondId);
+function logDetails(value) {
+    if (value.type === 'users') {
+        console.log(value.id, value.name, value.email);
+    }
+    else if (value.type === 'person') {
+        console.log(value.id, value.firstname, value.age);
+    }
+}
 //# sourceMappingURL=index.js.map
