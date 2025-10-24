@@ -138,3 +138,4 @@ function formatUser(user: user){
 }
 
 formatUser(userOne)
+formatUser({name: 'mont', score: 80})

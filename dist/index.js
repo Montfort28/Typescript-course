@@ -73,4 +73,5 @@ function formatUser(user) {
     console.log(`${user.name} scored ${user.score} marks`);
 }
 formatUser(userOne);
+formatUser({ name: 'mont', score: 80 });
 //# sourceMappingURL=index.js.map
