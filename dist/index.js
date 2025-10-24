@@ -80,10 +80,13 @@ someId = 1;
 someId = '2';
 function swapIdTypes(id) {
     if (typeof id == 'string') {
-        //code using only string values
+        return parseInt(id);
     }
     else {
-        //code now using number type values
+        return id.toString();
     }
 }
+const firstId = swapIdTypes(1);
+const secondId = swapIdTypes('3');
+console.log(firstId, secondId);
 //# sourceMappingURL=index.js.map

@@ -153,8 +153,13 @@ type Id = number | string
 
 function swapIdTypes(id: Id){
     if (typeof id == 'string'){
-        //code using only string values
+        return parseInt(id)
     }else{
-        //code now using number type values
+        return id.toString()
     }
 }
+
+const firstId = swapIdTypes(1)
+const secondId = swapIdTypes('3')
+
+console.log(firstId, secondId)
