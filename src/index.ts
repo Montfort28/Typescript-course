@@ -123,3 +123,14 @@ function getRandomColor(): Rgb{
 const colorOne = getRandomColor()
 const colorTwo = getRandomColor()
 console.log(colorOne, colorTwo)
+
+//example 2
+
+type user = {
+    name: string
+    score: number
+}
+
+function formatUser(user: user){
+    console.log(`${user.name} scored ${user.score} marks` )
+}
